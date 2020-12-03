@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
+  <remote alias="repo" fetch="https://github.com/openembedded" name="oe"/>
+  <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote alias="repo" fetch="https://github.com/Freescale" name="githf"/>
+  <remote alias="repo" fetch="https://git.toradex.com" name="tdx"/>
+  
+  <default sync-j="4"/>
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="22b8c53205f8915b33d1e0ad6a666dcacc01491d" upstream="master"/>
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="d9874ce27c7a2ff3ed2a3a2e5f6de810f10421ae" upstream="master"/>
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="c9321f75f1f830d5a3f2831f4cbdbffdcbc82bf0" upstream="master"/>
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="6e3785a3f1f3cf68f5fe101cd6bebe91db165973" upstream="master"/>
+  
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="a086aeb1b03f124d62be915dfce5466413892d3d" upstream="master"/>
+  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="9eff18e2e71b4696023edd903046499cb2d096fb" upstream="master"/>
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="5a1b2c22a90a22e8d9d178324451e1c58d01cee7" upstream="master"/>
+  
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="cb6806fb541016d31214ff66ce9105667163dbea" upstream="master"/>
+  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="622b43ee0545dcec7c5dbfc5ece6b96b44903890" upstream="master"/>
+  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="b0b9a677472f927561a11d1b7a55ccd573012645" upstream="master"/>
+
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb" upstream="master"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="b5780b86c777a6627f74de8e6de5698d2491b1ce" upstream="master"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="3ac9d557e46037a70a062df873ea2f3fea33f195" upstream="master">
+    <copyfile dest="export" src="buildconf/export"/>
+  </project>
+</manifest>
