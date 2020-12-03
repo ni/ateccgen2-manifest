@@ -7,22 +7,22 @@
   <remote alias="repo" fetch="https://git.toradex.com" name="tdx"/>
   
   <default sync-j="4"/>
-  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="22b8c53205f8915b33d1e0ad6a666dcacc01491d" upstream="master"/>
-  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="d9874ce27c7a2ff3ed2a3a2e5f6de810f10421ae" upstream="master"/>
-  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="c9321f75f1f830d5a3f2831f4cbdbffdcbc82bf0" upstream="master"/>
-  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="6e3785a3f1f3cf68f5fe101cd6bebe91db165973" upstream="master"/>
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="89fc9450abefd682266efcbfa031d1ef115ff1a7" upstream="1.46"/>
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" upstream="dunfell"/>
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="c1c79c1a122b053fb3ce0187b3cc89df1bb3bdd6" upstream="dunfell"/>
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="b885888df67eb5cdb3b82f4f0a07369a449e223b" upstream="dunfell"/>
   
-  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="a086aeb1b03f124d62be915dfce5466413892d3d" upstream="master"/>
-  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="9eff18e2e71b4696023edd903046499cb2d096fb" upstream="master"/>
-  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="5a1b2c22a90a22e8d9d178324451e1c58d01cee7" upstream="master"/>
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="05b1746a4adc240b690fe965ac5b8a043d9b9d03" upstream="dunfell"/>
+  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="5d882cdf079b3bde0bd9869ce3ca3db411acbf3b" upstream="dunfell"/>
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="46f54fdc5ad854a22bf759aac7fd65db1d1bb574" upstream="dunfell"/>
   
-  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="cb6806fb541016d31214ff66ce9105667163dbea" upstream="master"/>
-  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="622b43ee0545dcec7c5dbfc5ece6b96b44903890" upstream="master"/>
-  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="b0b9a677472f927561a11d1b7a55ccd573012645" upstream="master"/>
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="cab1ac409fa532c22f64c570f1b5c2350b570f94" upstream="dunfell-5.x.y"/>
+  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="4087b01cd5c70f4656cdff26a4e7d7ecc73bf41f" upstream="dunfell-5.x.y"/>
+  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="b5179b050062a29c2fe0bdfc1717b616c4f1630e" upstream="dunfell-5.x.y"/>
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="8d5672cc6ca327576a814d35dfb5d59ab24043cb" upstream="master"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="b5780b86c777a6627f74de8e6de5698d2491b1ce" upstream="master"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="3ac9d557e46037a70a062df873ea2f3fea33f195" upstream="master">
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="0d8eb956015acdea7e77cd6672d08dce18061510" upstream="dunfell"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="b962519c754bd918e99ff08e583f63ffb10757b0" upstream="dunfell-5.x.y"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="48913ab629a231913e3e147e93e57f7cf6019ac6" upstream="dunfell-5.x.y">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
