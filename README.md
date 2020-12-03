@@ -1,0 +1,1 @@
+# SmartRack-Manifest
