@@ -23,9 +23,9 @@
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="0d8eb956015acdea7e77cd6672d08dce18061510" upstream="dunfell"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="b962519c754bd918e99ff08e583f63ffb10757b0" upstream="dunfell-5.x.y"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="48913ab629a231913e3e147e93e57f7cf6019ac6" upstream="dunfell-5.x.y">
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="48913ab629a231913e3e147e93e57f7cf6019ac6" upstream="dunfell-5.x.y"/>
+    
+  <project name="meta-smartrack.git" path="layers/meta-smartrack" remote="nismrck" revision="f5e594afb18dacbdfc0d27079f3f00241993da12" upstream="main">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
-  
-  <project name="meta-smartrack.git" path="layers/meta-smartrack" remote="nismrck" revision="f5e594afb18dacbdfc0d27079f3f00241993da12" upstream="main"/>
 </manifest>
