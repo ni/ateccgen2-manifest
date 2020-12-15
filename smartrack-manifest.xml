@@ -27,5 +27,5 @@
     <copyfile dest="export" src="buildconf/export"/>
   </project>
   
-  <project name="meta-smartrack.git" path="layers/meta-smartrack" remote="nismrck" revision="" upstream=""/>
+  <project name="meta-smartrack.git" path="layers/meta-smartrack" remote="nismrck" revision="f5e594afb18dacbdfc0d27079f3f00241993da12" upstream="main"/>
 </manifest>
