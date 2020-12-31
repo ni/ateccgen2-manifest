@@ -30,5 +30,5 @@
     <copyfile dest="export" src="buildconf/export"/>
   </project>
   
-  <project name="meta-rauc.git" path="layers/meta-rauc" remote="rauc" revision="dunfell" upstream="dunfell">
+  <project name="meta-rauc.git" path="layers/meta-rauc" remote="rauc" revision="dunfell" upstream="dunfell"/>
 </manifest>
