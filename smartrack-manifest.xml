@@ -18,12 +18,12 @@
   <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="5d882cdf079b3bde0bd9869ce3ca3db411acbf3b" upstream="dunfell"/>
   <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="46f54fdc5ad854a22bf759aac7fd65db1d1bb574" upstream="dunfell"/>
   
-  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="cab1ac409fa532c22f64c570f1b5c2350b570f94" upstream="dunfell-5.x.y"/>
-  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="4087b01cd5c70f4656cdff26a4e7d7ecc73bf41f" upstream="dunfell-5.x.y"/>
-  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="b5179b050062a29c2fe0bdfc1717b616c4f1630e" upstream="dunfell-5.x.y"/>
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="cdbfe017be9096adbbfb4d3bbea0421e44f54cf3" upstream="dunfell-5.x.y"/>
+  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="8e762e3c8ec5c84f76254f442f37c70dfb7e1b68" upstream="dunfell-5.x.y"/>
+  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="b214067b27204f471cf405a1e3997d3da233a8f9" upstream="dunfell-5.x.y"/>
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="0d8eb956015acdea7e77cd6672d08dce18061510" upstream="dunfell"/>
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="b962519c754bd918e99ff08e583f63ffb10757b0" upstream="dunfell-5.x.y"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="38705bdc1ff671597680c5a9c9d1a76822bb5620" upstream="dunfell-5.x.y"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="48913ab629a231913e3e147e93e57f7cf6019ac6" upstream="dunfell-5.x.y"/>
     
   <project name="meta-smartrack.git" path="layers/meta-smartrack" remote="nismrck" revision="main" upstream="main">
