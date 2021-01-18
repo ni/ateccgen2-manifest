@@ -9,26 +9,41 @@
   <remote alias="repo" fetch="https://github.com/rauc" name="rauc"/>
   
   <default sync-j="4"/>
+  <!-- bitbake: Branch 1.46 -->
   <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="89fc9450abefd682266efcbfa031d1ef115ff1a7" upstream="1.46"/>
+  <!-- meta-openembedded: Branch dunfell -->
   <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" upstream="dunfell"/>
+  <!-- meta-openembedded: Branch dunfell -->
   <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="c1c79c1a122b053fb3ce0187b3cc89df1bb3bdd6" upstream="dunfell"/>
+  <!-- meta-openembedded: Branch dunfell -->
   <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="b885888df67eb5cdb3b82f4f0a07369a449e223b" upstream="dunfell"/>
   
+  <!-- meta-freescale-3rdparty: Branch dunfell -->
   <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="05b1746a4adc240b690fe965ac5b8a043d9b9d03" upstream="dunfell"/>
+  <!-- meta-freescale-distro: Branch dunfell -->
   <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="5d882cdf079b3bde0bd9869ce3ca3db411acbf3b" upstream="dunfell"/>
+  <!-- meta-freescale: Branch dunfell -->
   <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="46f54fdc5ad854a22bf759aac7fd65db1d1bb574" upstream="dunfell"/>
   
+  <!-- meta-toradex-bsp-common: Branch dunfell-5.x.y -->
   <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="cdbfe017be9096adbbfb4d3bbea0421e44f54cf3" upstream="dunfell-5.x.y"/>
+  <!-- meta-toradex-nxp: Branch dunfell-5.x.y -->
   <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="8e762e3c8ec5c84f76254f442f37c70dfb7e1b68" upstream="dunfell-5.x.y"/>
+  <!-- meta-toradex-tegra: Branch dunfell-5.x.y -->
   <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="b214067b27204f471cf405a1e3997d3da233a8f9" upstream="dunfell-5.x.y"/>
-
+  
+  <!-- meta-qt5: Branch dunfell -->
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="0d8eb956015acdea7e77cd6672d08dce18061510" upstream="dunfell"/>
+  <!-- meta-toradex-demos: Branch dunfell-5.x.y -->
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="38705bdc1ff671597680c5a9c9d1a76822bb5620" upstream="dunfell-5.x.y"/>
+  <!-- meta-toradex-distro: Branch dunfell-5.x.y -->
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="48913ab629a231913e3e147e93e57f7cf6019ac6" upstream="dunfell-5.x.y"/>
-    
+  
+  <!-- meta-smartrack: Branch main -->
   <project name="meta-smartrack.git" path="layers/meta-smartrack" remote="nismrck" revision="main" upstream="main">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
   
+  <!-- meta-smartrack: Branch dunfell -->
   <project name="meta-rauc.git" path="layers/meta-rauc" remote="rauc" revision="dunfell" upstream="dunfell"/>
 </manifest>
