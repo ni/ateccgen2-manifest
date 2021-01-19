@@ -18,11 +18,11 @@
   <!-- https://github.com/openembedded/meta-openembedded/commit/f2d02cb71eaff8eb285a1997b30be52486c160ae -->
   <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="f2d02cb71eaff8eb285a1997b30be52486c160ae" upstream="dunfell"/>
   
-  <!-- meta-openembedded: Branch dunfell -->
+  <!-- meta-yocto: Branch dunfell -->
   <!-- https://git.yoctoproject.org/cgit/cgit.cgi/meta-yocto/commit/?id=c1c79c1a122b053fb3ce0187b3cc89df1bb3bdd6 -->
   <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="c1c79c1a122b053fb3ce0187b3cc89df1bb3bdd6" upstream="dunfell"/>
   
-  <!-- meta-openembedded: Branch dunfell -->
+  <!-- openembedded-core: Branch dunfell -->
   <!-- https://github.com/openembedded/openembedded-core/commit/b885888df67eb5cdb3b82f4f0a07369a449e223b -->
   <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="b885888df67eb5cdb3b82f4f0a07369a449e223b" upstream="dunfell"/>
   
@@ -67,6 +67,7 @@
     <copyfile dest="export" src="buildconf/export"/>
   </project>
   
-  <!-- meta-smartrack: Branch dunfell -->
-  <project name="meta-rauc.git" path="layers/meta-rauc" remote="rauc" revision="dunfell" upstream="dunfell"/>
+  <!-- meta-rauc: Branch dunfell -->
+  <!-- https://github.com/rauc/meta-rauc/commit/f4b30e72a37455adcb233e097a0e7484535c37b0 -->
+  <project name="meta-rauc.git" path="layers/meta-rauc" remote="rauc" revision="f4b30e72a37455adcb233e097a0e7484535c37b0" upstream="dunfell"/>
 </manifest>
