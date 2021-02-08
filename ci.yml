@@ -56,7 +56,7 @@ jobs:
       
       repo sync --force-sync
       
-      #--- Applying externalsrc for meta-smartracks ---
+      #--- Apply externalsrc for meta-smartracks by using the 'checkout' version ---
       cp  -r $(Build.SourcesDirectory)/meta-smartracks $(Build.SourcesDirectory)/smartracks-manifest/layers
       cp  $(Build.SourcesDirectory)/meta-smartracks/buildconf/export $(Build.SourcesDirectory)/smartracks-manifest
       sed -i 's|S = "${WORKDIR}/git"|#S = "${WORKDIR}/git"|g' $(Build.SourcesDirectory)/smartracks-manifest/layers/meta-smartracks/recipes-core/rcu-service/rcu-service_1.0.bb
