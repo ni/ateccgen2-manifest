@@ -45,6 +45,7 @@ jobs:
       git checkout -b main
       repo init -u $(Build.SourcesDirectory)/smartracks-manifest -b main -m smartracks-manifest.xml
       
+      #--- Prevent sync meta-smartracks from manifest.xml ---
       mkdir -p .repo/local_manifests
       cat > .repo/local_manifests/remove-meta-smartracks.xml <<EOF
       <?xml version="1.0" encoding="UTF-8"?>
@@ -53,13 +54,16 @@ jobs:
       </manifest>
       EOF
       
-      repo sync
+      repo sync --force-sync
+      
+      #--- Applying externalsrc for meta-smartracks ---
       cp  -r $(Build.SourcesDirectory)/meta-smartracks $(Build.SourcesDirectory)/smartracks-manifest/layers
       cp  $(Build.SourcesDirectory)/meta-smartracks/buildconf/export $(Build.SourcesDirectory)/smartracks-manifest
       sed -i 's|S = "${WORKDIR}/git"|#S = "${WORKDIR}/git"|g' $(Build.SourcesDirectory)/smartracks-manifest/layers/meta-smartracks/recipes-core/rcu-service/rcu-service_1.0.bb
       . export
       echo "INHERIT += \"externalsrc\"" >> $(Build.SourcesDirectory)/smartracks-manifest/build/conf/local.conf
       echo "EXTERNALSRC_pn-rcu-service = \"$(Build.SourcesDirectory)/rcu-service\"" >> $(Build.SourcesDirectory)/smartracks-manifest/build/conf/local.conf
+      
       bitbake smartracks-minimal-image
       mkdir -p build-$(Build.BuildNumber)
       cp deploy/images/apalis-imx8x-smartracks/$(find . -name 'Apalis-iMX8X-SmartRacks_Reference-Minimal-Image-rt-Tezi_*.tar') build-$(Build.BuildNumber)
