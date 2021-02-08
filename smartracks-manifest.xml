@@ -5,7 +5,7 @@
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote alias="repo" fetch="https://github.com/Freescale" name="githf"/>
   <remote alias="repo" fetch="https://git.toradex.com" name="tdx"/>
-  <remote alias="repo" fetch="ssh://git@github.com/ni" name="ni"/>
+  <remote alias="repo" fetch="https://github.com/ni" name="ni"/>
   <remote alias="repo" fetch="https://github.com/rauc" name="rauc"/>
   
   <default sync-j="4"/>
