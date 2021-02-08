@@ -5,19 +5,22 @@ resources:
   repositories:
   - repository: rcu-service
     type: github
-    name: ni/rcu-service
+    name: tanchunhau/rcu-service
+    ref: refs/heads/main
     endpoint: smartracks
   - repository: smartracks-manifest
     type: github
-    name: ni/smartracks-manifest
+    name: tanchunhau/smartracks-manifest
+    ref: refs/heads/main
     endpoint: smartracks
   - repository: meta-smartracks
     type: github
-    name: ni/meta-smartracks
+    name: tanchunhau/meta-smartracks
+    ref: refs/heads/main
     endpoint: smartracks
   containers:
   - container: smartracks-build
-    image: rnd-builds.repos.natinst.com/smartracks/smartracks-build:1
+    image: rnd-builds.repos.natinst.com/smartracks/smartracks-build:0.3
     options:
     volumes:
     - /mnt:/mnt
@@ -33,11 +36,31 @@ jobs:
       - Agent.OS -equals Linux
   
   steps:
+  - checkout: smartracks-manifest
+  - checkout: rcu-service
+  - checkout: meta-smartracks
   - script: |
-      repo init -u https://github.com/ni/smartracks-manifest.git -b main -m smartracks-manifest.xml
+      cd $(Build.SourcesDirectory)/smartracks-manifest
+      git branch
+      git checkout -b main
+      repo init -u $(Build.SourcesDirectory)/smartracks-manifest -b main -m smartracks-manifest.xml
+      
+      mkdir -p .repo/local_manifests
+      cat > .repo/local_manifests/remove-meta-smartracks.xml <<EOF
+      <?xml version="1.0" encoding="UTF-8"?>
+      <manifest>
+        <remove-project name="meta-smartracks.git" />
+      </manifest>
+      EOF
+      
       repo sync
+      cp  -r $(Build.SourcesDirectory)/meta-smartracks $(Build.SourcesDirectory)/smartracks-manifest/layers
+      cp  $(Build.SourcesDirectory)/meta-smartracks/buildconf/export $(Build.SourcesDirectory)/smartracks-manifest
+      sed -i 's|S = "${WORKDIR}/git"|#S = "${WORKDIR}/git"|g' $(Build.SourcesDirectory)/smartracks-manifest/layers/meta-smartracks/recipes-core/rcu-service/rcu-service_1.0.bb
       . export
+      echo "INHERIT += \"externalsrc\"" >> $(Build.SourcesDirectory)/smartracks-manifest/build/conf/local.conf
+      echo "EXTERNALSRC_pn-rcu-service = \"$(Build.SourcesDirectory)/rcu-service\"" >> $(Build.SourcesDirectory)/smartracks-manifest/build/conf/local.conf
       bitbake smartracks-minimal-image
       mkdir -p build-$(Build.BuildNumber)
       cp deploy/images/apalis-imx8x-smartracks/$(find . -name 'Apalis-iMX8X-SmartRacks_Reference-Minimal-Image-rt-Tezi_*.tar') build-$(Build.BuildNumber)
-      cp -R build-$(Build.BuildNumber) /mnt/nirvana/perforceExports/smartracks
+      cp -R build-$(Build.BuildNumber) /mnt/nirvana/perforceExports/smartracks/development
