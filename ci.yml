@@ -3,6 +3,11 @@ trigger:
 
 resources:
   repositories:
+  - repository: smartracks-script
+    type: github
+    name: ni/smartracks-script
+    ref: refs/heads/main
+    endpoint: smartracks
   - repository: rcu-service
     type: github
     name: ni/rcu-service
@@ -26,47 +31,4 @@ resources:
     - /mnt:/mnt
          
 jobs:
-- job: OpenEmbedded_Build_And_Export
-  container: smartracks-build
-  timeoutInMinutes: 3600
-  workspace:
-    clean: all
-  pool:
-    name: Drivers-NIBuildFarm-RFMIBUILD
-    demands:
-      - docker
-      - Agent.OS -equals Linux
-  
-  steps:
-  - checkout: smartracks-manifest
-  - checkout: rcu-service
-  - checkout: meta-smartracks
-  - script: |
-      cd $(Build.SourcesDirectory)/smartracks-manifest
-      git checkout -b main
-      repo init -u $(Build.SourcesDirectory)/smartracks-manifest -b main -m smartracks-manifest.xml
-      
-      #--- Prevent sync meta-smartracks from manifest.xml ---
-      mkdir .repo/local_manifests
-      cat > .repo/local_manifests/remove-meta-smartracks.xml <<EOF
-      <?xml version="1.0" encoding="UTF-8"?>
-      <manifest>
-        <remove-project name="meta-smartracks.git" />
-      </manifest>
-      EOF
-      
-      repo sync --force-sync
-      
-      #--- Apply externalsrc for rcu-service by using the 'checkout' version ---
-      cp  -r $(Build.SourcesDirectory)/meta-smartracks $(Build.SourcesDirectory)/smartracks-manifest/layers
-      cp  $(Build.SourcesDirectory)/meta-smartracks/buildconf/export $(Build.SourcesDirectory)/smartracks-manifest
-      sed -i 's|S = "${WORKDIR}/git"|#S = "${WORKDIR}/git"|g' $(Build.SourcesDirectory)/smartracks-manifest/layers/meta-smartracks/recipes-core/rcu-service/rcu-service_*.bb
-      . export
-      echo "INHERIT += \"externalsrc\"" >> $(Build.SourcesDirectory)/smartracks-manifest/build/conf/local.conf
-      echo "EXTERNALSRC_pn-rcu-service = \"$(Build.SourcesDirectory)/rcu-service\"" >> $(Build.SourcesDirectory)/smartracks-manifest/build/conf/local.conf
-      
-      bitbake smartracks-minimal-image
-      cd deploy/images/apalis-imx8x-smartracks
-      mkdir build-$(Build.BuildNumber)
-      cp $(find . -name 'Apalis-iMX8X-SmartRacks_Reference-Minimal-Image-rt-Tezi_*.tar') build-$(Build.BuildNumber)
-      cp -R build-$(Build.BuildNumber) /mnt/nirvana/perforceExports/smartracks/development
+ - template: azure-pipeline-template/ci.yml@smartracks-script
