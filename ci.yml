@@ -1,3 +1,26 @@
+name: $(version)
+
+variables:
+  version.major: 99
+  version.minor: 9
+  version.update: 0
+  version.phase: d
+  version.name: $[format('{0}.{1}.{2}.{3}', variables['version.major'], variables['version.minor'], variables['version.update'], variables['version.phase'])]
+  version.revision: $[counter(variables['version.name'], 0)]
+  version: $[format('{0}{1}', variables['version.name'], variables['version.revision'])]
+  buildsdk: ${{parameters.buildsdk}}
+  buildfeed: ${{parameters.buildfeed}}
+
+parameters:
+  - name: buildsdk
+    displayName: Build SDK?
+    type: boolean
+    default: false
+  - name: buildfeed
+    displayName: Build package feed?
+    type: boolean
+    default: false
+
 trigger:
 - main
 
