@@ -1,10 +1,11 @@
 name: $(version)
 
+#TODO: Change version.major to 21 once pipeline is ready to be enabled 
 variables:
   version.major: 99
-  version.minor: 9
+  version.minor: 0
   version.update: 0
-  version.phase: d
+  version.phase: a
   version.name: $[format('{0}.{1}.{2}.{3}', variables['version.major'], variables['version.minor'], variables['version.update'], variables['version.phase'])]
   version.revision: $[counter(variables['version.name'], 0)]
   version: $[format('{0}{1}', variables['version.name'], variables['version.revision'])]
