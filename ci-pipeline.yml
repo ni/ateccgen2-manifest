@@ -55,4 +55,4 @@ resources:
     - /mnt:/mnt
          
 jobs:
- - template: azure-pipeline-template/ci.yml@smartracks-script
+ - template: azure-pipeline-template/rcu-image-ci-template.yml@smartracks-script
