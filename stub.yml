@@ -1,0 +1,11 @@
+# Stub pipeline
+# After execution of this pipeline is finished, rcu-image-ci-pipeline.yml located in smatracks-script should be executed.
+
+trigger:
+- main
+
+pool:
+  name: Drivers-NIBuildFarm-RFMIBUILD
+
+steps:
+- script: echo Triggering rcu-image-ci-pipeline!
