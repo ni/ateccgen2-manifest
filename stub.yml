@@ -4,6 +4,8 @@
 trigger:
 - main
 
+pr: none
+
 pool:
   name: Drivers-NIBuildFarm-RFMIBUILD
 
