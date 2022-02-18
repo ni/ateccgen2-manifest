@@ -63,7 +63,7 @@
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="432c37ce55d3d5c03bd67d17348d1e667070f661" upstream="dunfell-5.x.y"/>
   
   <!-- meta-smartrack: Branch main -->
-  <project name="meta-smartracks.git" path="layers/meta-smartracks" remote="ni" revision="main" upstream="main">
+  <project name="meta-smartracks.git" path="layers/meta-smartracks" remote="ni" revision="wkoeRevBPorting" upstream="wkoeRevBPorting">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
   
