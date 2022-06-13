@@ -10,20 +10,20 @@
   <default sync-j="4"/>
   
   <!-- bitbake: Branch 1.46 -->
-  <!-- https://github.com/openembedded/bitbake/commit/e6d75e0beb95aa0cdf82bbc0a6b767c7f6cfcfc0 -->
-  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="e6d75e0beb95aa0cdf82bbc0a6b767c7f6cfcfc0" upstream="1.46"/>
+  <!-- https://github.com/openembedded/bitbake/commit/0784db7dd0fef6f0621ad8d74372f44e87fef950 -->
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="e0784db7dd0fef6f0621ad8d74372f44e87fef950" upstream="1.46"/>
   
   <!-- meta-openembedded: Branch dunfell -->
-  <!-- https://github.com/openembedded/meta-openembedded/commit/ab9fca485e13f6f2f9761e1d2810f87c2e4f060a -->
-  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="ab9fca485e13f6f2f9761e1d2810f87c2e4f060a" upstream="dunfell"/>
+  <!-- https://github.com/openembedded/meta-openembedded/commit/8ff12bfffcf0840d5518788a53d88d708ad3aae0 -->
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="8ff12bfffcf0840d5518788a53d88d708ad3aae0" upstream="dunfell"/>
   
   <!-- meta-yocto: Branch dunfell -->
-  <!-- https://git.yoctoproject.org/cgit/cgit.cgi/meta-yocto/commit/?id=44647201cfcdb4dd11eb1651ab62c64ca2aacb10 -->
-  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="44647201cfcdb4dd11eb1651ab62c64ca2aacb10" upstream="dunfell"/>
+  <!-- https://git.yoctoproject.org/cgit/cgit.cgi/meta-yocto/commit/?id=7e0063a8546250c4c5b9454cfa89fff451a280ee -->
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="7e0063a8546250c4c5b9454cfa89fff451a280ee" upstream="dunfell"/>
   
   <!-- openembedded-core: Branch dunfell -->
-  <!-- https://github.com/openembedded/openembedded-core/commit/01f256bc72fb45c80b6a6c77506bc4c375965a3a -->
-  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="01f256bc72fb45c80b6a6c77506bc4c375965a3a" upstream="dunfell"/>
+  <!-- https://github.com/openembedded/openembedded-core/commit/add860e1a69f848097bbc511137a62d5746e5019 -->
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="add860e1a69f848097bbc511137a62d5746e5019" upstream="dunfell"/>
   
   <!-- meta-freescale-3rdparty: Branch dunfell -->
   <!-- https://github.com/Freescale/meta-freescale-3rdparty/commit/c52f64973cd4043a5e8be1c7e29bb9690eb4c3e5 -->
@@ -34,32 +34,32 @@
   <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="5d882cdf079b3bde0bd9869ce3ca3db411acbf3b" upstream="dunfell"/>
   
   <!-- meta-freescale: Branch dunfell -->
-  <!-- https://github.com/Freescale/meta-freescale/commit/e1e51ebbe8f24f51cb501584e4566421a3a0f1e3 -->
-  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="e1e51ebbe8f24f51cb501584e4566421a3a0f1e3" upstream="dunfell"/>
+  <!-- https://github.com/Freescale/meta-freescale/commit/3cb29cff92568ea835ef070490f185349d712837 -->
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="3cb29cff92568ea835ef070490f185349d712837" upstream="dunfell"/>
   
   <!-- meta-toradex-bsp-common: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-bsp-common.git/commit/?id=a3debcd429139019c528932b0436854349b4fb86 -->
-  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="a3debcd429139019c528932b0436854349b4fb86" upstream="dunfell-5.x.y"/>
+  <!-- https://git.toradex.com/cgit/meta-toradex-bsp-common.git/commit/?id=54c48da8942137b75c35fa6eb850f62fbbeb6bc9 -->
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="54c48da8942137b75c35fa6eb850f62fbbeb6bc9" upstream="dunfell-5.x.y"/>
   
   <!-- meta-toradex-nxp: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-nxp.git/commit/?id=d26fac8da30aa1e530f11178f85ea285d329d442 -->
-  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="d26fac8da30aa1e530f11178f85ea285d329d442" upstream="dunfell-5.x.y"/>
+  <!-- https://git.toradex.com/cgit/meta-toradex-nxp.git/commit/?id=cc4048ba326cb86cbf2631d5b31b415eb318ce82 -->
+  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="cc4048ba326cb86cbf2631d5b31b415eb318ce82" upstream="dunfell-5.x.y"/>
   
   <!-- meta-toradex-tegra: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-tegra.git/commit/?id=a03fde04d777cb3f9549d6fbf234924211c867c2 -->
-  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="a03fde04d777cb3f9549d6fbf234924211c867c2" upstream="dunfell-5.x.y"/>
+  <!-- https://git.toradex.com/cgit/meta-toradex-tegra.git/commit/?id=16fc6147d6a145000693ebd695abb202da808499 -->
+  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="16fc6147d6a145000693ebd695abb202da808499" upstream="dunfell-5.x.y"/>
   
   <!-- meta-qt5: Branch dunfell -->
-  <!-- https://github.com/meta-qt5/meta-qt5/commit/b4d24d70aca75791902df5cd59a4f4a54aa4a125 -->
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125" upstream="dunfell"/>
+  <!-- https://github.com/meta-qt5/meta-qt5/commit/5ef3a0ffd3324937252790266e2b2e64d33ef34f -->
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>
   
   <!-- meta-toradex-demos: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-demos.git/commit/?id=eeaa1fa0f22496a84d42c2b54e4ae23b567b07f2 -->
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="eeaa1fa0f22496a84d42c2b54e4ae23b567b07f2" upstream="dunfell-5.x.y"/>
+  <!-- https://git.toradex.com/cgit/meta-toradex-demos.git/commit/?id=6d6951d053ff1a7347af0ac04fcbb72564a28954 -->
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="6d6951d053ff1a7347af0ac04fcbb72564a28954" upstream="dunfell-5.x.y"/>
   
   <!-- meta-toradex-distro: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-distro.git/commit/?id=432c37ce55d3d5c03bd67d17348d1e667070f661 -->
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="432c37ce55d3d5c03bd67d17348d1e667070f661" upstream="dunfell-5.x.y"/>
+  <!-- https://git.toradex.com/cgit/meta-toradex-distro.git/commit/?id=cbde0286cb85bc445e70210b8df38f29b4784c08 -->
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="cbde0286cb85bc445e70210b8df38f29b4784c08" upstream="dunfell-5.x.y"/>
   
   <!-- meta-smartrack: Branch main -->
   <project name="meta-smartracks.git" path="layers/meta-smartracks" remote="ni" revision="main" upstream="main">
