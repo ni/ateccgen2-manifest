@@ -11,7 +11,7 @@
   
   <!-- bitbake: Branch 1.46 -->
   <!-- https://github.com/openembedded/bitbake/commit/0784db7dd0fef6f0621ad8d74372f44e87fef950 -->
-  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="e0784db7dd0fef6f0621ad8d74372f44e87fef950" upstream="1.46"/>
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="0784db7dd0fef6f0621ad8d74372f44e87fef950" upstream="1.46"/>
   
   <!-- meta-openembedded: Branch dunfell -->
   <!-- https://github.com/openembedded/meta-openembedded/commit/8ff12bfffcf0840d5518788a53d88d708ad3aae0 -->
