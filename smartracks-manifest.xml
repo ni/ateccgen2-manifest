@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  a
   <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
   <remote alias="repo" fetch="https://github.com/openembedded" name="oe"/>
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote alias="repo" fetch="https://github.com/Freescale" name="githf"/>
   <remote alias="repo" fetch="https://git.toradex.com" name="tdx"/>
   <remote alias="repo" fetch="https://github.com/ni" name="ni"/>
+  <remote alias="repo" fetch="https://github.com/mendersoftware" name="mender"/>
   
   <default sync-j="4"/>
   
@@ -62,7 +62,15 @@
   <!-- meta-toradex-distro: Branch dunfell-5.x.y -->
   <!-- https://git.toradex.com/cgit/meta-toradex-distro.git/commit/?id=cbde0286cb85bc445e70210b8df38f29b4784c08 -->
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="cbde0286cb85bc445e70210b8df38f29b4784c08" upstream="dunfell-5.x.y"/>
+    
+  <!-- meta-mender: Branch dunfell -->
+  <!-- https://github.com/mendersoftware/meta-mender/commit/855b5f6d955ecdf93c5251180784d1d7fe1109e6 -->
+  <project name="meta-mender" path="layers/meta-mender" remote="mender" revision="855b5f6d955ecdf93c5251180784d1d7fe1109e6" upstream="dunfell"/>
   
+  <!-- meta-mender-community: Branch dunfell -->
+  <!-- https://github.com/mendersoftware/meta-mender-community/commit/91122992c85cb18a0daffcde76b6c59116e723b9 -->
+  <project name="meta-mender-community" path="layers/meta-mender-community" remote="mender" revision="91122992c85cb18a0daffcde76b6c59116e723b9" upstream="dunfell"/>
+    
   <!-- meta-smartrack: Branch main -->
   <project name="meta-smartracks.git" path="layers/meta-smartracks" remote="ni" revision="main" upstream="main">
     <copyfile dest="export" src="buildconf/export"/>
