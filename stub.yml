@@ -17,7 +17,6 @@ steps:
 - script: echo Triggering rcu-image-ci-pipeline!
 - powershell: |
     $url = "https://dev.azure.com/ni/Users/_apis/distributedtask/variablegroups/303?api-version=5.0-preview.1"
-    Write-Host $url
     $json = '{"id":2,"type":"Vsts","name":"SmartRacksPipelineVariables","variables":{"TriggeringPipeline":{"isSecret":false,"value":"smartracks-manifest"}}}'
     $pipeline = Invoke-RestMethod -Uri $url -Method Put -Body $json -ContentType "application/json" -Headers @{
         Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
