@@ -47,7 +47,7 @@
   <!-- https://git.toradex.com/cgit/meta-toradex-nxp.git/commit/?id=a174b6faada51c7e196c39c7a0f914754e8fa41d -->
   <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="a174b6faada51c7e196c39c7a0f914754e8fa41d" upstream="kirkstone-6.x.y"/>
 
-  <!-- meta-toradex-tegra: Branch kirkstone-6.x.y -->
+  <!-- meta-toradex-ti: Branch kirkstone-6.x.y -->
   <!-- https://git.toradex.com/cgit/meta-toradex-ti.git/commit/?id=96ba7e7074d7b0f363095726b6a93acc71cbeffa -->
   <project name="meta-toradex-ti.git" path="layers/meta-toradex-ti" remote="tdx" revision="96ba7e7074d7b0f363095726b6a93acc71cbeffa" upstream="kirkstone-6.x.y"/>
 
