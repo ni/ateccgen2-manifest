@@ -22,7 +22,7 @@ Create a directory for your OE-Core setup to live in and clone the meta-informat
 ```
 $ mkdir ${HOME}/oe-core
 $ cd ${HOME}/oe-core
-$ repo init -u https://github.com/ni/smartracks-manifest.git -b $GITBRANCH -m smartracks-manifest.xml
+$ repo init -u https://github.com/ni/ateccgen2-manifest.git -b $GITBRANCH -m ateccgen2-manifest.xml
 $ repo sync
 ```
 Replace $GITBRANCH with the branch name that you would like to sync the manifest from, e.g. `main`
@@ -34,5 +34,5 @@ $ . export
 
 Build the image:
 ```
-$ bitbake smartracks-minimal-image
+$ bitbake ateccgen2-minimal-image
 ```
