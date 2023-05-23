@@ -1,6 +1,6 @@
 # Stub pipeline
 # Updates the TriggeringPipeline variable in AteCoreConfigGen2PipelineVariables group.
-# After execution of this pipeline is finished, rcu-image-ci-pipeline.yml located in smatracks-script should be executed.
+# After execution of this pipeline is finished, rcu-image-ci-pipeline.yml located in ateccgen2-script should be executed.
 
 variables:
   - group: AteCoreConfigGen2PipelineVariables
