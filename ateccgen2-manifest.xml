@@ -71,8 +71,8 @@
   <!-- https://github.com/mendersoftware/meta-mender-community/commit/91122992c85cb18a0daffcde76b6c59116e723b9 -->
   <project name="meta-mender-community" path="layers/meta-mender-community" remote="mender" revision="91122992c85cb18a0daffcde76b6c59116e723b9" upstream="dunfell"/>
     
-  <!-- meta-smartrack: Branch main -->
-  <project name="meta-smartracks.git" path="layers/meta-smartracks" remote="ni" revision="main" upstream="main">
+  <!-- meta-ateccgen2: Branch main -->
+  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="main" upstream="main">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
