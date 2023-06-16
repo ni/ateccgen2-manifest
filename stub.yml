@@ -3,10 +3,10 @@
 # After execution of this pipeline is finished, rcu-image-ci-pipeline.yml located in smatracks-script should be executed.
 
 variables:
-  - group: SmartRacksPipelineVariables
+  - group: AteCoreConfigGen2PipelineVariables
 
 trigger:
-- main
+- release/23.0.1
 
 pr: none
 
@@ -17,7 +17,7 @@ steps:
 - script: echo Triggering rcu-image-ci-pipeline!
 - powershell: |
     $url = "https://dev.azure.com/ni/DevCentral/_apis/distributedtask/variablegroups/303?api-version=5.0-preview.1"
-    $json = '{"id":2,"type":"Vsts","name":"SmartRacksPipelineVariables","variables":{"TriggeringPipeline":{"isSecret":false,"value":"smartracks-manifest"},"CommitMessage":{"isSecret":false,"value":"$(Build.SourceVersionMessage)"}}}'
+    $json = '{"id":2,"type":"Vsts","name":"AteCoreConfigGen2PipelineVariables","variables":{"TriggeringPipeline":{"isSecret":false,"value":"smartracks-manifest"},"CommitMessage":{"isSecret":false,"value":"$(Build.SourceVersionMessage)"}}}'
     $pipeline = Invoke-RestMethod -Uri $url -Method Put -Body $json -ContentType "application/json" -Headers @{
         Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
     }
