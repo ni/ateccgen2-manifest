@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
   <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
   <remote alias="repo" fetch="https://github.com/openembedded" name="oe"/>
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
@@ -8,69 +7,77 @@
   <remote alias="repo" fetch="https://git.toradex.com" name="tdx"/>
   <remote alias="repo" fetch="https://github.com/ni" name="ni"/>
   <remote alias="repo" fetch="https://github.com/mendersoftware" name="mender"/>
-  
+
   <default sync-j="4"/>
-  
-  <!-- bitbake: Branch 1.46 -->
-  <!-- https://github.com/openembedded/bitbake/commit/0784db7dd0fef6f0621ad8d74372f44e87fef950 -->
-  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="0784db7dd0fef6f0621ad8d74372f44e87fef950" upstream="1.46"/>
-  
-  <!-- meta-openembedded: Branch dunfell -->
-  <!-- https://github.com/openembedded/meta-openembedded/commit/8ff12bfffcf0840d5518788a53d88d708ad3aae0 -->
-  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="8ff12bfffcf0840d5518788a53d88d708ad3aae0" upstream="dunfell"/>
-  
-  <!-- meta-yocto: Branch dunfell -->
-  <!-- https://git.yoctoproject.org/cgit/cgit.cgi/meta-yocto/commit/?id=7e0063a8546250c4c5b9454cfa89fff451a280ee -->
-  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="7e0063a8546250c4c5b9454cfa89fff451a280ee" upstream="dunfell"/>
-  
-  <!-- openembedded-core: Branch dunfell -->
-  <!-- https://github.com/openembedded/openembedded-core/commit/add860e1a69f848097bbc511137a62d5746e5019 -->
-  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="add860e1a69f848097bbc511137a62d5746e5019" upstream="dunfell"/>
-  
-  <!-- meta-freescale-3rdparty: Branch dunfell -->
-  <!-- https://github.com/Freescale/meta-freescale-3rdparty/commit/c52f64973cd4043a5e8be1c7e29bb9690eb4c3e5 -->
-  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="c52f64973cd4043a5e8be1c7e29bb9690eb4c3e5" upstream="dunfell"/>
-  
-  <!-- meta-freescale-distro: Branch dunfell -->
-  <!-- https://github.com/Freescale/meta-freescale-distro/commit/5d882cdf079b3bde0bd9869ce3ca3db411acbf3b -->
-  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="5d882cdf079b3bde0bd9869ce3ca3db411acbf3b" upstream="dunfell"/>
-  
-  <!-- meta-freescale: Branch dunfell -->
-  <!-- https://github.com/Freescale/meta-freescale/commit/3cb29cff92568ea835ef070490f185349d712837 -->
-  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="3cb29cff92568ea835ef070490f185349d712837" upstream="dunfell"/>
-  
-  <!-- meta-toradex-bsp-common: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-bsp-common.git/commit/?id=54c48da8942137b75c35fa6eb850f62fbbeb6bc9 -->
-  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="54c48da8942137b75c35fa6eb850f62fbbeb6bc9" upstream="dunfell-5.x.y"/>
-  
-  <!-- meta-toradex-nxp: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-nxp.git/commit/?id=cc4048ba326cb86cbf2631d5b31b415eb318ce82 -->
-  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="cc4048ba326cb86cbf2631d5b31b415eb318ce82" upstream="dunfell-5.x.y"/>
-  
-  <!-- meta-toradex-tegra: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-tegra.git/commit/?id=16fc6147d6a145000693ebd695abb202da808499 -->
-  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="16fc6147d6a145000693ebd695abb202da808499" upstream="dunfell-5.x.y"/>
-  
-  <!-- meta-qt5: Branch dunfell -->
-  <!-- https://github.com/meta-qt5/meta-qt5/commit/5ef3a0ffd3324937252790266e2b2e64d33ef34f -->
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>
-  
-  <!-- meta-toradex-demos: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-demos.git/commit/?id=6d6951d053ff1a7347af0ac04fcbb72564a28954 -->
-  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="6d6951d053ff1a7347af0ac04fcbb72564a28954" upstream="dunfell-5.x.y"/>
-  
-  <!-- meta-toradex-distro: Branch dunfell-5.x.y -->
-  <!-- https://git.toradex.com/cgit/meta-toradex-distro.git/commit/?id=cbde0286cb85bc445e70210b8df38f29b4784c08 -->
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="cbde0286cb85bc445e70210b8df38f29b4784c08" upstream="dunfell-5.x.y"/>
-    
-  <!-- meta-mender: Branch dunfell -->
-  <!-- https://github.com/mendersoftware/meta-mender/commit/855b5f6d955ecdf93c5251180784d1d7fe1109e6 -->
-  <project name="meta-mender" path="layers/meta-mender" remote="mender" revision="855b5f6d955ecdf93c5251180784d1d7fe1109e6" upstream="dunfell"/>
-  
-  <!-- meta-mender-community: Branch dunfell -->
-  <!-- https://github.com/mendersoftware/meta-mender-community/commit/91122992c85cb18a0daffcde76b6c59116e723b9 -->
-  <project name="meta-mender-community" path="layers/meta-mender-community" remote="mender" revision="91122992c85cb18a0daffcde76b6c59116e723b9" upstream="dunfell"/>
-    
+
+  <!-- bitbake: Branch 2.0 -->
+  <!-- https://github.com/openembedded/bitbake/commit/0c6f86b60cfba67c20733516957c0a654eb2b44c -->
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="0c6f86b60cfba67c20733516957c0a654eb2b44c" upstream="2.0"/>
+
+  <!-- meta-openembedded: Branch kirkstone -->
+  <!-- https://github.com/openembedded/meta-openembedded/commit/5f120a926b0fcd55cfe7565bb7ddf23661cad498 -->
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="5f120a926b0fcd55cfe7565bb7ddf23661cad498" upstream="kirkstone"/>
+
+  <!-- meta-yocto: Branch kirkstone -->
+  <!-- https://git.yoctoproject.org/cgit/cgit.cgi/meta-yocto/commit/?id=4f81a08e7b655968266211cfc943085a69865a90 -->
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="4f81a08e7b655968266211cfc943085a69865a90" upstream="kirkstone"/>
+
+  <!-- openembedded-core: Branch kirkstone -->
+  <!-- https://github.com/openembedded/openembedded-core/commit/717b9f18a51e9c9fd5a471238aa2ea4de439ef17 -->
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="717b9f18a51e9c9fd5a471238aa2ea4de439ef17" upstream="kirkstone"/>
+
+  <!-- meta-freescale-3rdparty: Branch kirkstone -->
+  <!-- https://github.com/Freescale/meta-freescale-3rdparty/commit/fa18e5bf5abdabcc37d4bfbc3c46713cd9d19e2e -->
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="fa18e5bf5abdabcc37d4bfbc3c46713cd9d19e2e" upstream="kirkstone"/>
+
+  <!-- meta-freescale-distro: Branch kirkstone -->
+  <!-- https://github.com/Freescale/meta-freescale-distro/commit/d5bbb487b2816dfc74984a78b67f7361ce404253 -->
+  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" upstream="kirkstone"/>
+
+  <!-- meta-freescale: Branch kirkstone -->
+  <!-- https://github.com/Freescale/meta-freescale/commit/c90c2c2f18badca14439e01bd3e891d1fd99b255 -->
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="c90c2c2f18badca14439e01bd3e891d1fd99b255" upstream="kirkstone"/>
+
+  <!-- meta-toradex-bsp-common: Branch kirkstone-6.x.y -->
+  <!-- https://git.toradex.com/cgit/meta-toradex-bsp-common.git/commit/?id=90777b9695c720c271221e0b73c55e21b6eb64a7 -->
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="90777b9695c720c271221e0b73c55e21b6eb64a7" upstream="kirkstone-6.x.y"/>
+
+  <!-- meta-toradex-nxp: Branch kirkstone-6.x.y -->
+  <!-- https://git.toradex.com/cgit/meta-toradex-nxp.git/commit/?id=378db7384cbdb84b4dead84af0b0a05c36bd65fe -->
+  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="378db7384cbdb84b4dead84af0b0a05c36bd65fe" upstream="kirkstone-6.x.y"/>
+
+  <!-- meta-toradex-ti: Branch kirkstone-6.x.y -->
+  <!-- https://git.toradex.com/cgit/meta-toradex-ti.git/commit/?id=0b261c143751f752303361fcd0f31fdbd0b18554 -->
+  <project name="meta-toradex-ti.git" path="layers/meta-toradex-ti" remote="tdx" revision="0b261c143751f752303361fcd0f31fdbd0b18554" upstream="kirkstone-6.x.y"/>
+
+  <!-- meta-arm: Branch kirkstone -->
+  <!-- https://git.yoctoproject.org/cgit/cgit.cgi/meta-arm/commit/?id=96aad3b29aa7a5ee4df5cf617a6336e5218fa9bd -->
+  <project name="meta-arm" path="layers/meta-arm" remote="yocto" revision="96aad3b29aa7a5ee4df5cf617a6336e5218fa9bd" upstream="kirkstone"/>
+
+  <!-- meta-ti: Branch kirkstone -->
+  <!-- https://git.yoctoproject.org/cgit/cgit.cgi/meta-ti/commit/?id=1743b0101984094cb74fed9105afd59de110a044 -->
+  <project name="meta-ti" path="layers/meta-ti" remote="yocto" revision="1743b0101984094cb74fed9105afd59de110a044" upstream="kirkstone"/>
+
+  <!-- meta-qt5: Branch kirkstone -->
+  <!-- https://github.com/meta-qt5/meta-qt5/commit/bff5bd937f0776166e81a63f3dd39ede348ef758 -->
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="bff5bd937f0776166e81a63f3dd39ede348ef758" upstream="kirkstone"/>
+
+  <!-- meta-toradex-demos: Branch kirkstone-6.x.y -->
+  <!-- https://git.toradex.com/cgit/meta-toradex-demos.git/commit/?id=cd885de817405c00298500f90af689612757aebb -->
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="cd885de817405c00298500f90af689612757aebb" upstream="kirkstone-6.x.y"/>
+
+  <!-- meta-toradex-distro: Branch kirkstone-6.x.y -->
+  <!-- https://git.toradex.com/cgit/meta-toradex-distro.git/commit/?id=50942e30e5d81e3894fd4db3d8b79e2cb53d2a9b -->
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="50942e30e5d81e3894fd4db3d8b79e2cb53d2a9b" upstream="kirkstone-6.x.y"/>
+
+  <!-- meta-mender: Branch kirkstone -->
+  <!-- https://github.com/mendersoftware/meta-mender/commit/88d370ba5cab12822d63d4aba9025d5569b6be27 -->
+  <project name="meta-mender" path="layers/meta-mender" remote="mender" revision="88d370ba5cab12822d63d4aba9025d5569b6be27" upstream="kirkstone"/>
+
+  <!-- meta-mender-community: Branch kirkstone -->
+  <!-- https://github.com/mendersoftware/meta-mender-community/commit/8a2c2bc31e04e110a64d295d6940e812a2d74ad3 -->
+  <project name="meta-mender-community" path="layers/meta-mender-community" remote="mender" revision="8a2c2bc31e04e110a64d295d6940e812a2d74ad3" upstream="kirkstone"/>
+
   <!-- meta-ateccgen2: Branch main -->
   <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="main" upstream="main">
     <copyfile dest="export" src="buildconf/export"/>
