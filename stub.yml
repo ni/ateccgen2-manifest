@@ -6,7 +6,7 @@ variables:
   - group: AteCoreConfigGen2PipelineVariables
 
 trigger:
-- main
+- release/25.8.0
 
 pr: none
 
