@@ -68,7 +68,7 @@
 
   <!-- meta-toradex-distro: Branch kirkstone-6.x.y -->
   <!-- https://git.toradex.com/cgit/meta-toradex-distro.git/commit/?id=491e249099a36c2eb7f8c0192f100265c1eae0b1 -->
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="491e249099a36c2eb7f8c0192f100265c1eae0b1" upstream="kirkstone-6.x.y"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="f80ce33240fc8d44d0b63b010161a9b5b8836c87" upstream="kirkstone-6.x.y"/>
 
   <!-- meta-mender: Branch kirkstone -->
   <!-- https://github.com/mendersoftware/meta-mender/commit/684fa23a731208b4f813d36eac8f034fe646f19c -->
