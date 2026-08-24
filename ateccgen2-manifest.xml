@@ -68,7 +68,7 @@
 
   <!-- meta-toradex-distro: Branch kirkstone-6.x.y -->
   <!-- https://git.toradex.com/cgit/meta-toradex-distro.git/commit/?id=491e249099a36c2eb7f8c0192f100265c1eae0b1 -->
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="f80ce33240fc8d44d0b63b010161a9b5b8836c87" upstream="kirkstone-6.x.y"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="491e249099a36c2eb7f8c0192f100265c1eae0b1" upstream="kirkstone-6.x.y"/>
 
   <!-- meta-mender: Branch kirkstone -->
   <!-- https://github.com/mendersoftware/meta-mender/commit/684fa23a731208b4f813d36eac8f034fe646f19c -->
@@ -79,7 +79,7 @@
   <project name="meta-mender-community" path="layers/meta-mender-community" remote="mender" revision="defe3aa1a72e6663adc6a67347687e34d3798845" upstream="kirkstone"/>
 
   <!-- meta-ateccgen2: Branch main -->
-  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="c65ce89b732661c68954971f122045611722bc32" upstream="users/shlooi/web_server">
+  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="f80ce33240fc8d44d0b63b010161a9b5b8836c87" upstream="users/shlooi/web_server">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
