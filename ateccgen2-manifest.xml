@@ -83,9 +83,9 @@
   <!-- https://github.com/NI-CHO/meta-mender-community/commit/fdbe27cf4957aba7bb168db153011d6a9ebc5d3c -->
   <project name="meta-mender-community" path="layers/meta-mender-community" remote="ni-cho" revision="fdbe27cf4957aba7bb168db153011d6a9ebc5d3c" upstream="scarthgap"/>
 
-  <!-- meta-ateccgen2: Branch main -->
-  <!-- https://github.com/NI-CHO/meta-ateccgen2/commit/975df33eb3979a5b2b0f6813cf2887fbf9a80cf9 -->
-  <project name="meta-ateccgen2" path="layers/meta-ateccgen2" remote="ni-cho" revision="975df33eb3979a5b2b0f6813cf2887fbf9a80cf9" upstream="main">
+  <!-- meta-ateccgen2: Branch scarthgap -->
+  <!-- https://github.com/ni/meta-ateccgen2/commit/f1637a9c5c414cbd0cfe2fdfb48325b9a24c3dbc -->
+  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="f1637a9c5c414cbd0cfe2fdfb48325b9a24c3dbc" upstream="scarthgap">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
