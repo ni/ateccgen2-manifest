@@ -84,8 +84,7 @@
   <project name="meta-mender-community" path="layers/meta-mender-community" remote="ni-cho" revision="fdbe27cf4957aba7bb168db153011d6a9ebc5d3c" upstream="scarthgap"/>
 
   <!-- meta-ateccgen2: Branch scarthgap -->
-  <!-- https://github.com/ni/meta-ateccgen2/commit/f1637a9c5c414cbd0cfe2fdfb48325b9a24c3dbc -->
-  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="f1637a9c5c414cbd0cfe2fdfb48325b9a24c3dbc" upstream="scarthgap">
+  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="scarthgap">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
