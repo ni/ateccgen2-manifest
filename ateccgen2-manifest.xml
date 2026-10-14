@@ -79,7 +79,7 @@
   <project name="meta-mender-community" path="layers/meta-mender-community" remote="mender" revision="defe3aa1a72e6663adc6a67347687e34d3798845" upstream="kirkstone"/>
 
   <!-- meta-ateccgen2: Branch main -->
-  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="b5b6eeae54479e4be472b80de164c25d64bd8938" upstream="users/shlooi/web_server">
+  <project name="meta-ateccgen2.git" path="layers/meta-ateccgen2" remote="ni" revision="52d363ad50eb3173b006ae593991f58195feb6fe" upstream="users/shlooi/web_server">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
